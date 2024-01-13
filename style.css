@@ -1,0 +1,57 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 60pt;
+    text-align: center;
+
+    /* Remove unwanted padding */
+    margin: 0;
+    padding: 0;
+
+    /* Manually set wanted padding */
+    margin-top: 40pt;
+}
+
+h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40pt;
+    text-align: center;
+
+    /* Remove unwanted padding */
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30pt;
+}
+
+.pink-trees-img{
+    width: 250pt;
+    height: auto;
+    border-radius: 15px;
+
+    /* Only aligns this item in center with flexbox */
+    align-self: center;
+}
+
+.visually-stunning{
+    /* adds a small gap to the top */
+    margin-top: 40pt;
+   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
