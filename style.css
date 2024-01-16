@@ -37,8 +37,8 @@ p{
 }
 
 .pink-trees-img{
-    width: 250pt;
-    height: auto;
+    width: auto;
+    height: 200pt;
     border-radius: 15px;
 
     /* Only aligns this item in center with flexbox */
@@ -46,12 +46,22 @@ p{
 }
 
 .visually-stunning{
-    /* adds a small gap to the top */
-    margin-top: 40pt;
-   
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /* sets a gap between flex elements */
+    gap: 40px;
+
+    /* creates a space at the top */
+    margin-top: 50pt;
 }
