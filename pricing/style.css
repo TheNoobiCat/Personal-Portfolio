@@ -1,7 +1,4 @@
-body, html{
-    height:100%;
-    margin: 0;
-}
+
 
 .pricing-calculator{
     display: flex;
@@ -18,22 +15,7 @@ select{
     font-family: 'Work Sans', sans-serif;
 }
 
-.getprice{
-    width: 80%;
-    height: 50pt;
-    border-style: solid;
-    border-radius: 15px;
-    font-size: 20pt;
-    background-color: lime;
-    border-width: 3px;
-}
 
-.getprice:hover{
-    background-color: rgb(55, 255, 55);
-}
-.getprice:active{
-    background-color: rgb(138, 255, 138);
-}
 
 
 .container{
@@ -42,4 +24,11 @@ select{
     align-items: center;
     flex-direction: column;
     height: 100vh;
+}
+.pricebtncontainer{
+    position: sticky;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15px;
+    padding: 10px;
+    bottom: 0;
 }
