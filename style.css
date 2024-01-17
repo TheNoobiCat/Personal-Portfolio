@@ -2,6 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
+.marquee-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+  }
+  
+  .marquee p {
+    display: inline-block;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+
 
 body{
     display: flex;
@@ -17,8 +43,15 @@ h1{
     margin: 0;
     padding: 0;
 
-    /* Manually set wanted padding */
-    margin-top: 40pt;
+
+}
+
+hr{
+    color: black;
+    width: 90%;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
 }
 
 h2{
@@ -33,16 +66,24 @@ h2{
 
 p{
     font-family: 'Work Sans', sans-serif;
-    font-size: 30pt;
+    font-size: 25pt;
 }
 
 .pink-trees-img{
     width: auto;
-    height: 200pt;
+    width: 270pt;
     border-radius: 15px;
 
     /* Only aligns this item in center with flexbox */
     align-self: center;
+
+    /* sick animation */
+    animation: FadeIn 1s;
+}
+
+@keyframes FadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .visually-stunning{
@@ -64,4 +105,24 @@ p{
 
     /* creates a space at the top */
     margin-top: 50pt;
+
+    /* leaves space for rule */
+    margin-bottom: 70px;
+}
+
+.fromcambridge{
+    margin: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40pt;
+}
+
+
+.cambridgeimg{
+    width:270pt;
+
+    border-radius: 15px;
 }

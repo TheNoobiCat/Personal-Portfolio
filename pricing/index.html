@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel C - Pricing</title>
+    <script src="pricecalc.js"></script>
+
+    <!-- Import Style Sheet -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="marquee-wrapper">
+        <div class="marquee">
+          <p>
+             SamuelC.dev | Pricing | SamuelC.dev | Pricing | SamuelC.dev | Pricing | SamuelC.dev | Pricing | SamuelC.dev | Pricing | SamuelC.dev | Pricing | SamuelC.dev | Pricing | SamuelC.dev | Pricing | SamuelC.dev | Pricing
+          </p>
+        </div>
+    </div>
+    <h1>Pricing</h1>
+    <h2>Make use of my pricing calculator for an accurate and competitive quote!</h2>
+
+    <div class="pricing-calculator">
+        <p>How many pages do you need?</p>
+        <select name="How Many Pages?" id="pages">
+            <option value="">Modern Single Page Site</option>
+            <option value="">2 Page Site (Home and One Other Page)</option>
+            <option value="">Up to 4 Pages (Home and Three Other Pages)</option>
+            <option value="">Up to 6 Pages (Home and Five Other Pages)</option>
+            <option value="">I'll Need More Than That!</option>
+        </select>
+
+        <p>What category does your website fall under?</p>
+        <select name="Website Type" id="sitetype">
+            <option value="">Personal Portfolio</option>
+            <option value="">Building And Construction</option>
+            <option value="">Restaurant</option>
+            <option value="">Art and Design</option>
+            <option value="">Photography</option>
+            <option value="">Other</option>
+        </select>
+        <br><br><br>
+        <p style="font-size: 10pt;">By continuing, you understand that this price is only an estimate. You must get in touch if you want to order a website, and you must describe the exact website you require. The button below will open a new window.</p>
+        <button onclick="getPriceWindow()" class="getprice">Fetch Price</button>
+    </div>
+</body>
+</html>
