@@ -11,7 +11,7 @@
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    animation: marquee 25s linear infinite;
+    animation: marquee 30s linear infinite;
   }
   
   .marquee p {
@@ -145,4 +145,13 @@ p{
 }
 .getprice:active{
   background-color: rgb(255, 255, 255);
+}
+
+.profiles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
