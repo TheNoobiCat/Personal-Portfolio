@@ -25,10 +25,3 @@ select{
     flex-direction: column;
     height: 100vh;
 }
-.pricebtncontainer{
-    position: sticky;
-    background-color: rgb(225, 225, 225);
-    border-radius: 15px;
-    padding: 10px;
-    bottom: 0;
-}
