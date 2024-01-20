@@ -4,7 +4,7 @@ function getPriceWindow(){
     sitetype = parseFloat(document.getElementById("sitetype").value)
     console.log(pagecount)
     console.log(sitetype)
-    price=((pagecount*sitetype*3.99)*1.4).toFixed(2)
+    price=((pagecount*sitetype*6.99)*1.4).toFixed(2)
 
 
     var url = 'quote.html?price='+price;
