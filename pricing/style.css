@@ -8,20 +8,10 @@
 }
 
 select{
-    height: 30pt;
+    height: 50pt;
     width: 80%;
     border-radius: 15px;
+    font-size: large;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
-}
-
-
-
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
 }

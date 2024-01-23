@@ -153,3 +153,22 @@ p{
   flex-direction: column;
   align-items: center;
 }
+
+.TryOutEditBtn{
+  width: 80%;
+  height: 50pt;
+  border-style: solid;
+  border-radius: 15px;
+  font-size: 20pt;
+  color: white;
+  border-color: black;
+  background-color: black;
+  border-width: 3px;
+}
+
+.TryOutEditBtn:hover{
+  background-color: rgb(41, 41, 41);
+}
+.TryOutEditBtn:active{
+  background-color: rgb(255, 255, 255);
+}

@@ -7,6 +7,7 @@
 
     <!-- Import Style Sheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="FaviconFiles/apple-touch-icon.png">
@@ -47,9 +48,54 @@
    
     <!-- <img class="cambridgeimg" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/KingsCollegeChapelWest.jpg" alt=""> -->
     <div class="cambridgebest">
-        <h1>&#127942; #1<br>Most-Affordable<br></h1><h2>Web Designer in Cambridge</h2>
+        <h1>&#127942; #1<br><h2>Most-Affordable</h2></h1><h2>Web Designer in Cambridge</h2>
         <br><br>
         <img class="cambridgeimg" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/KingsCollegeChapelWest.jpg" alt="">
+    </div>
+
+    <br><br><br><br>
+    <div class="editable">
+        <h1 style="font-size:60px;" id="CustomisableTyper">Ultra Customisable!</h1>
+        <script>
+            var string = document.getElementById("CustomisableTyper")
+            var typewriter = new Typewriter(string, {
+                loop: true,
+                delay: 50
+            });
+
+            typewriter.typeString('Ultra Customisable!')
+                .pauseFor(2500)
+                .deleteChars(13)
+                .typeString("<i>Customisable</i>!")
+                .pauseFor(2500)
+                .deleteChars(13)
+                .typeString("<u>Customisable</u>!")
+                .pauseFor(2500)
+                .deleteAll()
+                .start()
+        </script>
+
+        <br>
+
+        <script>
+            function editMode(){
+                if(document.designMode == "on"){
+                    window.location.reload()
+                }else{
+                    document.designMode = "on"
+                
+                    document.getElementById("TryOutEditBtn").innerHTML = "Edit Mode enabled! Click to disable."
+                }
+            }
+        </script>
+        <div style="display: flex;justify-content: center;">
+            <button id="TryOutEditBtn" onclick="editMode()" class="TryOutEditBtn">Try Out Edit Mode!</button>
+        </div>
+
+        <br>
+        <p style="text-align: center;">
+            Edit mode is a fantastic custom solution I designed! <br> It makes it easy for business owners to edit their website when they need to make a quick change! <br> Try it out by pressing the button above, then select some text. Easy as that!
+        </p>
     </div>
 
     <p style="font-size: 7pt; text-align: center;">*price is an estimation only. Photo credit to Mo Eid and Cambridge Photo from Wikipedia</p>
