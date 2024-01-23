@@ -15,3 +15,11 @@ select{
     text-align: center;
     font-family: 'Work Sans', sans-serif;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
